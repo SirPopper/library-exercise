@@ -1,0 +1,156 @@
+body {
+  margin: 0;
+  border: 0;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+.br {
+  border: 1px solid red;
+}
+
+.bl {
+  border: 1px solid blue;
+}
+
+/* Container */
+.container {
+  height: 100vh;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 300px 1fr;
+  grid-template-rows: 100px 1fr;
+}
+
+/* header */
+.header {
+  grid-column: 1/3;
+  background-color: #60a5fa;
+  /* box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px; */
+  z-index: 1;
+
+  padding: 0px 40px;
+}
+
+.header > p {
+  color: white;
+  font-size: xx-large;
+  font-weight: bold;
+}
+
+/* sidebar */
+.sidebar {
+  grid-row: 2/3;
+  background-color: white;
+  z-index: 1;
+
+  padding: 0px 20px;
+}
+
+.sidebar > p {
+  font-size: larger;
+  font-weight: bold;
+}
+
+.form-imput {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+}
+
+.section {
+  padding: 10px 0px;
+  display: flex;
+  flex-direction: column;
+  color: rgb(72, 72, 72);
+}
+
+.section > input {
+  margin-top: 8px;
+  width: 80%;
+  border: 1px solid rgb(194, 194, 194);
+  border-radius: 5px;
+}
+
+.submit {
+  background-color: #60a5fa;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  margin-top: 20px;
+
+  display: flex;
+  margin-inline: auto;
+}
+
+.submit:hover {
+  background-color: #93c5fd;
+}
+
+.submit:active {
+  box-shadow: 2px 2px 10px #93c5fd;
+  transform: scale(1.1);
+}
+
+/* dashboard */
+.dashboard {
+  background-color: rgb(242, 242, 242);
+  padding: 30px;
+
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 100px));
+}
+
+/* card */
+
+.card {
+  z-index: 3;
+  background-color: white;
+  border: none;
+  border-radius: 30px;
+  padding: 10px;
+  width: 250px;
+  height: 300px;
+  box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset,
+    rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+
+  display: grid;
+
+  grid-template-rows: repeat(5, 1fr);
+}
+
+.card-button > svg:hover {
+  color: grey;
+}
+
+.card-button > svg:active {
+  transform: scale(1.1);
+}
+
+.card-button {
+  display: flex;
+  justify-content: right;
+  padding: 20px;
+}
+
+.card-title {
+  grid-row: 2/3;
+}
+
+.card-author {
+  grid-row: 3/4;
+}
+
+.card-pages {
+  grid-row: 4/5;
+}
+
+.card-read {
+  grid-row: 5/6;
+}
+.ctext {
+  padding: 10px;
+  text-align: center;
+}

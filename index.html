@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Amatic+SC&family=Lato:ital,wght@0,100;0,300;1,300&family=Nanum+Gothic:wght@400;700;800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,100;1,400;1,500;1,700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="header">
+        <p>Library</p>
+      </div>
+      <div class="sidebar">
+        <p>Add your book</p>
+        <form action="#" class="form-input">
+          <div class="section">
+            <label for="title">Add title</label>
+            <input type="text" id="title" />
+          </div>
+          <div class="section">
+            <label for="Author">Add Author</label>
+            <input type="text" id="title" />
+          </div>
+          <div class="section">
+            <label for="pages">Add pages</label>
+            <input type="text" id="pages" />
+          </div>
+          <div class="section">
+            <label for="read">Read</label>
+            <input type="checkbox" id="read" />
+          </div>
+          <button class="submit">Submit</button>
+        </form>
+      </div>
+      <div class="dashboard">
+        <div class="card">
+          <div class="card-button">
+            <svg style="width: 24px; height: 24px" viewBox="0 0 24 24">
+              <path
+                fill="currentColor"
+                d="M6,19A2,2 0 0,0 8,21H16A2,2 0 0,0 18,19V7H6V19M8,9H16V19H8V9M15.5,4L14.5,3H9.5L8.5,4H5V6H19V4H15.5Z"
+              />
+            </svg>
+          </div>
+          <div class="card-title ctext">"The Hobbit"</div>
+          <div class="card-author ctext">J.R.R Tolkien</div>
+          <div class="card-pages ctext">256 pages</div>
+          <div class="card-read ctext">Read</div>
+        </div>
+      </div>
+    </div>
+
+    <script src="main.js"></script>
+  </body>
+</html>
